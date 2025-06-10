@@ -2,11 +2,11 @@
 
 using namespace std;
 
+
 int main(){
     int opcion, pelicula, entradas, tabla, nota1, nota2, nota3, nota4, nota5, nota6, nota7;
-    float precio;
-    double promedio;
-
+    float precio, suma, promedio;
+do{
     cout<<"Bienvenido al menu, seleccione una opcion:"<<endl;
     cout<<"Opcion 1, peliculas.\nOpcion 2, tabla de multiplicar.\nOpcion 3, calculadora de promedios.\nOpcion 4, salir."<<endl;
     cin>>opcion;
@@ -72,7 +72,8 @@ int main(){
     cin>>nota6;
       cout<<"Ingrese la nota 7"<<endl;
     cin>>nota7;
-    promedio=nota1+nota2+nota3+nota4+nota4+nota6+nota7/7;
+    suma=nota1+nota2+nota3+nota4+nota4+nota6+nota7;
+    promedio=suma/7;
     cout<<"El promedio de sus notas es: "<<promedio<<endl;
     break;
 
@@ -81,8 +82,12 @@ int main(){
 
     }
 
+
+
+
     
-        
+  }while (opcion != 4);
+    cout<<"Gracias por usar el programa, hasta luego!"<<endl;    
     
     
 
